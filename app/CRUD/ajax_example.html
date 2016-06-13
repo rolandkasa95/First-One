@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <title> Test CMS </title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div class = "div_form">
+        <form action = "insert.php" method = "GET">
+          <h3 style="color:white">Autor Name: </h3><input type="text" class="input1" name="name" placeholder="Autor's Name" />
+          <h3 style="color:white">Email: </h3><input type="text" class="input1" name="email" placeholder="something@smth.com" /> <br><br>
+          <input style = "padding: 5px 10px 5px 10px" type = "submit" name="submit" value = "Submit"/>
+        </form>
+        </div>
+        <div class = "div_form">
+          <h2 style = "color: white">
+          If you want to delete use this: <br />
+        </h2>
+        <form action = "delete.php" method = "GET">
+          <h3 style="color:white">ID: </h3><input type="number" class="input1" name="id" placeholder="1" />
+          <h3 style="color:white">Autor Name: </h3><input type="text" class="input1" name="name" placeholder="Autor's Name" />
+          <h3 style="color:white">Email: </h3><input type="text" class="input1" name="email" placeholder="something@smth.com" /> <br><br>
+          <input style = "padding: 5px 10px 5px 10px" type = "submit" name="submit" value = "Submit"/>
+        </form>
+        </div>
+        <div class = "div_form">
+          <h2 style = "color: white">
+          If you want to update by ID use this: <br />
+        </h2>
+        <form action = "update.php" method = "GET">
+          <h3 style="color:white">ID: </h3><input type="number" class="input1" name="id" placeholder="1" />
+          <h3 style="color:white">Autor Name: </h3><input type="text" class="input1" name="name" placeholder="Autor's Name" />
+          <h3 style="color:white">Email: </h3><input type="text" class="input1" name="email" placeholder="something@smth.com" /> <br><br>
+          <input style = "padding: 5px 10px 5px 10px" type = "submit" name="submit" value = "Submit"/>
+        </form>
+        </div>
+    </body>
+</html>

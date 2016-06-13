@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Results</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $.ajax({
+          url:"ajax/select.php",
+          dataType:"json",
+          success:function(data){
+            $.each(data, function(index){
+              $("#row").append("<tr> <td>"+data[index].id+"</td> <td>"+data[index].name+"</td> <td>"+data[index].email+"</td> </tr");
+            });
+          }
+        });
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <div>
+        <table id="row"></table>
+        <br />
+        <input type="submit" value="Go Back!" onclick="history.go(-1)">
+    </div>
+
+  </body>
+
+</html>

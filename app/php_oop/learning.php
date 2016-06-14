@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(-1);
+error_reporting(E_ALL);
 
 class Connection {
 
@@ -62,11 +62,15 @@ class Connection {
 }
 
   $obj = new Connection();
-/* SELECT EVERYTHING
+
+
+
   $obj->connect();
   $obj->select();
-*/
+
+
 /*  INSERT A QUERRY
+
   echo "\n";
   $name="myName";
   $email="myEmail@email.com";
@@ -75,12 +79,14 @@ class Connection {
   $obj->connect();
   $obj->select();
 */
+
 /* DELETE A QUERY
   $obj->connect();
   $obj->delete(10);
   $obj->connect();
   $obj->select();
 */
+
 /* UPDATE A QUERY
   $obj->connect();
   $obj->update(9,'Daniel','daniel@daniel.com');

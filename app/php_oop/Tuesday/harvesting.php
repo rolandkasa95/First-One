@@ -15,23 +15,26 @@
  */
     class Fruits
     {
+
         /**
-         * Two variables.
-         *
-         * Initiated 2 variables which will contain data
-         * of the color of the fruit and the harvest date
-         *
+         * @var string
          */
         private $color;
+
+        /**
+         * @var string
+         */
         private $harvestDate;
+
         private $url_toimage;
 
         /**
-         * Fruits constructor.
-         * @param $color
+         * Construct fruit
          *
          * This constructor will set the color
          * of the fruit.
+         *
+         * @param string $color
          *
          */
         public function __construct($color)
@@ -40,11 +43,11 @@
         }
 
         /**
-         * Setting Color.
+         * Set Color
          * @param $color
          *
          * This function takes a color as a parameter,
-         * and puts it into a variable which will store
+         * and puts it into a property which will store
          * the data when the object is initiated.
          *
          */
@@ -68,7 +71,7 @@
         }
 
         /**
-         * Settung up the url to image.
+         * Setting up the url to image.
          * @param $url_toimage
          *
          * This function gets a path as parameter,
@@ -127,19 +130,7 @@
     */
     class Apple extends Fruits
     {
-        /**
-         * Apple constructor.
-         * @param $color
-         *
-         * This constructor calls the parents(Fruits)
-         * constructor, and will set the color which was
-         * given as a parameter
-         *
-         */
-        public function __construct($color)
-        {
-            parent::__construct($color);
-        }
+
     }
 
     /**
@@ -226,6 +217,7 @@
     $dateOfHarvestingGrape = strtotime("June 14");
     $grape->setHarvestDate($dateOfHarvestingGrape);
     $grape->setUrl_toimage('/php_oop/images/grape.jpeg');
+
 
     /**
     * We print out the data.

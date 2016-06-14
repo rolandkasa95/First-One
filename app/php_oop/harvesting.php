@@ -5,6 +5,14 @@
  * Date: 14.06.2016
  * Time: 14:14
  */
+
+/**
+ * Class Fruits
+ *
+ * Here i store the methods and the
+ * properties for all the extended
+ * classes like apple, pear and grape
+ */
     class Fruits
     {
         /**

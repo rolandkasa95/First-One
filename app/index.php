@@ -16,6 +16,12 @@
                     <a href="/php_oop/Tuesday/harvesting.php">Harvesting season for Fruits</a>
                 </li>
             </ul>
+            <ul>
+                Wednesday
+                <li>
+                    <a href="/15.06.2016/register.html">Register and login</a>
+                </li>
+            </ul>
         </li>
   </ul>
 

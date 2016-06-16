@@ -61,7 +61,7 @@ class Connection {
     }
 }
 
-  $obj = new Connection();
+$obj = new Connection();
 
 
 

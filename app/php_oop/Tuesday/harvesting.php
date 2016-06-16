@@ -191,8 +191,8 @@
     $apple1->setHarvestDate($dateOfHarvestingApple1);
     $dateOfHarvestingApple2 = strtotime("June 13");
     $apple2->setHarvestDate($dateOfHarvestingApple2);
-    $apple1->setUrl_toimage('/php_oop/images/apple_green.jpeg');
-    $apple2->setUrl_toimage('/php_oop/images/apple_red.jpg');
+    $apple1->setUrl_toimage('/php_oop/Tuesday/images/apple_green.jpeg');
+    $apple2->setUrl_toimage('/php_oop/Tuesday/images/apple_red.jpg');
 
     /**
     * Setting up the Pear.
@@ -204,7 +204,7 @@
     $pear = new Pear('Yellow');
     $dateOfHarvestingPear = strtotime("June 9");
     $pear->setHarvestDate($dateOfHarvestingPear);
-    $pear->setUrl_toimage('/php_oop/images/pear.jpeg');
+    $pear->setUrl_toimage('/php_oop/Tuesday/images/pear.jpeg');
 
     /**
     * Setting up the Grape.
@@ -216,7 +216,7 @@
     $grape = new Grape('Violet');
     $dateOfHarvestingGrape = strtotime("June 14");
     $grape->setHarvestDate($dateOfHarvestingGrape);
-    $grape->setUrl_toimage('/php_oop/images/grape.jpeg');
+    $grape->setUrl_toimage('/php_oop/Tuesday/images/grape.jpeg');
 
 
     /**
